@@ -1,6 +1,7 @@
 * {
     font-family: "Nerko One", cursive;
     font-family: "Roboto Mono", monospace;
+    box-sizing: border-box;
   }
   
   .instagram {
@@ -21,10 +22,10 @@
   
   body {
     margin: 0;
-    background-color: #e9baff;
+    background-color: #b8daff;
   }
   #text {
-    color: #884bc9;
+    color: #3285f2;
     align-items: center;
     width: 100vw;
     height: 5vh;
@@ -32,6 +33,7 @@
     justify-content: center;
     align-content: center;
     justify-items: center;
+    padding: 40px;
   }
   
   .board {
@@ -85,13 +87,13 @@
   .cell.x::before,
   .cell.x::after,
   .cell.circle::before {
-    background-color: #884bc9;
+    background-color: #3f8cf4;
   }
   
   .board.x .cell:not(.x):not(.circle):hover::before,
   .board.x .cell:not(.x):not(.circle):hover::after,
   .board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color:#ffffc2;
+    background-color:#fcfcd3;
   }
   
   .cell.x::before,
@@ -133,7 +135,7 @@
   .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * 0.7);
     height: calc(var(--mark-size) * 0.7);
-    background-color: #e9baff;
+    background-color: #b8daff;
   }
   
   .winning-message {
@@ -160,7 +162,7 @@
   }
   
   .winning-message button:hover {
-    background-color: #884bc9;
+    background-color: #3f8cf4;
     color: white;
     border-color: white;
   }
